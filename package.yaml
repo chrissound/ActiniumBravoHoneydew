@@ -1,11 +1,10 @@
-name: HaskellNixCabalStarter
+name: actiniumbravohoneydew
 version: '0.1.0.0'
-author: HaskellNixCabalStarter
-maintainer: HaskellNixCabalStarter
+author: Chris Stryczynski
+maintainer: Chris Stryczynski
 license: MIT
 dependencies:
 - base >=4.12 && <4.13
-executables:
-  app:
-    source-dirs: src
-    main: Main.hs
+- string-conversions
+library:
+  source-dirs: src
