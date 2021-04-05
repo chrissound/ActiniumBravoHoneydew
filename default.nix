@@ -1,4 +1,5 @@
 { sources ? import ./nix/sources.nix
+, compiler ? "ghc865"
 } :
 let
   niv = import sources.nixpkgs {
@@ -8,6 +9,6 @@ let
     config = {};
   };
   pkgs = niv.pkgs;
-  myHaskellPackages = pkgs.haskellPackages;
+  myHaskellPackages = pkgs.haskell.packages.${compiler};
 in
 myHaskellPackages.callCabal2nix "HaskellNixCabalStarter" (./.) {}
