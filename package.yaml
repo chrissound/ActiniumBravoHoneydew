@@ -4,7 +4,7 @@ author: Chris Stryczynski
 maintainer: Chris Stryczynski
 license: MIT
 dependencies:
-- base >=4.12 && <4.13
+- base >=4.12
 - string-conversions
 library:
   source-dirs: src
